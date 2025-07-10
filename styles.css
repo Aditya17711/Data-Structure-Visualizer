@@ -1,0 +1,57 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    overflow: hidden;
+    
+}
+.container
+{
+    height:35rem;
+    width:60rem;
+    margin-top: 6rem;
+    margin-left: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+.label
+{
+    text-align: center;
+}
+.button_div
+{
+    display: flex;
+    justify-content: center;
+
+}
+#h1_main_label
+{
+    font-size:4rem;
+    padding: 1rem;
+}
+#h3_main_label
+{
+    font-size: 2rem;
+}
+.main_button
+{
+    height: 2.5rem;
+    width: 7rem;
+    margin: 2.5rem;  
+    border-radius: 10px;
+    border: 2px solid red;  
+}
+.main_button:hover
+{
+    background-color: rgb(240, 205, 110);
+}

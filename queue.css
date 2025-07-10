@@ -1,0 +1,232 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+}
+
+.main_container
+{
+    display: flex;
+    flex-direction: column;
+}
+.header_container
+{
+    display: flex;
+    align-items: center;
+}
+.underline_container
+{
+    background-color: brown;
+    margin-left: 23.2rem;
+    height: 5px;
+    width: 25rem;
+}
+.heading
+{
+    font-size: 3rem;
+    margin-left: 25rem;
+}
+.header_button
+{
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;  
+    border-radius: 100px;
+    border: 2px solid red;  
+}
+#back_button_img
+{
+    height:2rem;
+    width: 2.5rem;
+    align-self: center;
+}
+
+.bottom_container
+{
+    max-height: 46.5vw;
+    max-width: 184vh;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.seperation_container
+{
+    background-color: brown;
+    height: 100%vw;
+    width: 2px;
+    margin-right: 1rem;
+}
+.para
+{
+    font-size: 23px;
+    padding: 5px;
+}
+.types,.operation_types,.complexity
+{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    display: flex;  
+}
+#book_logo,
+#operation_logo,
+#clock_logo
+{ 
+    margin: 4px;
+    margin-bottom: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.title
+{
+      font-weight: bold;
+      font-size: large;
+}
+.description
+{
+      font-size: 18px;  
+}
+.types_ol,.operation_ol
+{
+      padding-left: 4rem ;
+      max-width: 500px;
+}
+.types_ol,.operation_ol li
+{
+      margin-bottom: 10px;
+      font-size: 16px;
+}
+.actual_memory
+{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stack_actual_memory
+{
+    
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.data_container{
+    overflow-x: none;
+    max-width: 45rem;
+    height: 7rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow-y: hidden;
+}
+.stack_data_container
+{
+    width: 13rem;
+   
+    border: 3px solid red;
+    border-top: none;
+}
+.element
+{
+    display: flex;
+}
+.stack_element {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 18rem;
+    border-top: none;
+    padding: 5px;
+}
+.element_text
+{
+    background-color: rgb(204, 241, 148);
+    border: 3px solid red;
+    height: 3rem;
+    width: 4rem;
+    margin: 1rem;
+    color: black;
+    align-content: center;
+}
+.stack_element_text
+{
+    background-color: greenyellow;
+    height: 2.5rem;
+    width: 11.7rem;
+    margin: 2px;
+    color: black;
+    align-content: center;
+    text-align: center;
+}
+.details_display
+{
+    height: 8rem;
+}
+.details
+{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+.size_div
+{
+    background-color: black;
+    height: 1.9rem;
+    width: 4rem;
+    color: azure;
+    margin-left: 1rem;
+    border-bottom: 2px solid white;
+}
+.size_text_show
+{
+    
+    padding: 4px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+.functions
+{
+    height: 7rem;
+    width: 45.1rem;
+    display: flex;
+    flex-direction: column;
+}
+.functions_top
+{
+    display: flex;
+    justify-content: center;
+}
+.functions_bottom
+{
+    display: flex;
+    justify-content: center;
+}
+.function_top_textfield
+{
+    padding: 10px;
+}
+.text_field
+{
+    height: 2.5rem;
+    width: 25rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: larger;
+}
+.function_button{
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 8px;
+    margin: 10px;
+    border: 2px solid black;
+}

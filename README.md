@@ -31,7 +31,7 @@ Built using **HTML**, **CSS**, and **JavaScript** to demonstrate front-end skill
 ### Installation
 
 1. Clone the repository:
-   ```bash
+   ```https://github.com/Aditya17711/Data-Structure-Visualizer.git
    
    
 2. Open the project folder.

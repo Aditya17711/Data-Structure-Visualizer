@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="queue.css">
+<body>
+    <div class="stack_main_container">
+        <div class="header_container">
+            <a href="index.html">
+                 <button class="header_button" id="home_button" onclick="go_back_stack()">
+                <img  class=image id="back_button_img" src="back_icon.png" alt="back symbol">
+            </button>
+            </a>
+           
+           <div class="heading_container">
+                 <h1 class="heading">Stack Visualizer</h1>
+                 <div class="underline_container"> 
+        </div>
+           </div>
+        </div>
+       
+        <div class="bottom_container">
+            <div class="represent_container">
+                <div class="stack_actual_memory">
+                    <div class="stack_data_container" id="stack_data_container">
+                       
+                        <div class="stack_element" id="stack_element">
+                            
+                             <div class="stack_element_text" id="stack_element_text">
+                                <h3 class="size_text_show"><span>Null</span></h3>
+                            </div>
+                            
+                             
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="details_display">
+                    <div class="details">
+                        <h3>Size of the Stack:-</h3>
+                        <div class="size_div">
+                            <h3 class="size_text_show"><span id="size_value"></span></h3>
+                        </div>
+                    </div>
+                     <div class="details">
+                        <h3>Peek value(Top) :-</h3>
+                        <div class="size_div">
+                            <h3 class="size_text_show"><span id="peek_value"></span></h3>
+                        </div>
+                    </div>
+                     <div class="details">
+                        <h3>Stack is Empty:-</h3>
+                        <div class="size_div">
+                            <h3 class="size_text_show"><span id="isempty_value"></span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="functions">
+                    <div class="functions_top">
+                        <div class="function_top_textfield">
+                            <input class="text_field" type="text" placeholder="Enter the Value(max 7 char)" maxlength="7">
+                        </div>
+                        <div class="function_top_buttons">
+                            <button id="size_button"  class="function_button" onclick="size()">Size</button>
+                            <button id="reset_button" class="function_button" onclick="reset()">Reset</button>
+                        </div>
+                    </div>
+                    <div class="functions_bottom">
+                        <button id="enqueue_button" class="function_button" onclick="push()">Push</button>
+                        <button id="dequeue_button" class="function_button" onclick="pop()">Pop</button>
+                        <button id="peek" class="function_button" onclick="peek()">Peek</button>
+                        <button id="empty" class="function_button" onclick="isEmpty()">isEmpty</button>
+                    </div>
+                </div>
+            </div>
+            <div class="seperation_container"></div>
+            <div class="content_container">
+                <div class="para">
+                    <p>A stack is a linear data structure that follows the LIFO (Last In, First Out) principle. </p>
+                </div>
+                 <div class="para">
+                    <p>  The last element added is the first one removed — like a stack of plates.</p>
+                </div>
+                <div class="types">
+                    <div class="book_logo">
+                        <img id="book_logo" src="books.png" alt="book_logo">
+                    </div>
+                    <div class="types_text">
+                        <h3>Types of Stack Implementations:-</h3>
+                    </div>
+                </div>
+                <div class="types_list">
+                    
+                     <ol class="types_ol">
+                        <li>
+                            <span class="title">Array-based Stack:</span>
+                            <span class="description">Fixed size, fast access.</span>
+                        </li>
+                        <li>
+                            <span class="title">Linked List Stack:</span>
+                            <span class="description">Dynamic size, flexible.</span>
+                        </li>
+                        <li>
+                            <span class="title">Call Stack (System):</span>
+                            <span class="description"> Used internally in function calls.</span>
+                        </li>
+                       
+                    </ol>
+                </div>
+                  <div class="operation_types">
+                    <div class="operation_logo">
+                        <img id="operation_logo" src="operation.png" alt="operations_logo">
+                    </div>
+                    <div class="operation_text">
+                        <h4>Core Operations:-</h4>
+                    </div>
+                </div>
+                <div class="operation_list">
+                    
+                     <ol class="operation_ol">
+                        <li>
+                            <span class="title">push(x):</span>
+                            <span class="description">Add x to top of the stack</span>
+                        </li>
+                        <li>
+                            <span class="title">pop():</span>
+                            <span class="description">Remove and return top element</span>
+                        </li>
+                        <li>
+                            <span class="title">peek():</span>
+                            <span class="description">Return the top element</span>
+                        </li>
+                        <li>
+                            <span class="title">is Empty():</span>
+                            <span class="description">Return true if stack is empty</span>
+                        </li>
+                    </ol>
+                </div>
+                 <div class="complexity">
+                    <div class="operation_logo">
+                        <img id="clock_logo" src="clock.png" alt="clock_logo">
+                    </div>
+                    <div class="complexity_text">
+                        <h3>Time Complexity:- <span id="complexity_value">O(1)</span></h3>
+                    </div>
+                </div>
+                <div class="complexity">
+                    <div class="operation_logo">
+                        <img id="clock_logo" src="clock.png" alt="clock_logo">
+                    </div>
+                    <div class="complexity_text">
+                        <h3>Space Complexity:- <span id="complexity_value">O(n)</span></h3>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+<script src="stack.js"></script>
+</html>

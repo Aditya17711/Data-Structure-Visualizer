@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="queue.css">
+<body>
+    <div class="queue_main_container">
+        <div class="header_container">
+            <a href="index.html">
+            <button class="header_button" id="home_button">
+                <img  class=image id="back_button_img" src="back_icon.png" alt="back symbol">
+            </button>
+            </a>
+                
+           <div class="heading_container">
+                 <h1 class="heading">Queue Visualizer</h1>
+                 <div class="underline_container"> 
+        </div>
+           </div>
+        </div>
+       
+        <div class="bottom_container">
+            <div class="represent_container">
+                <div class="actual_memory">
+                    <div class="data_container">
+                       
+                        <div class="element">
+                            
+                             <div class="element_text">
+                                <h3 class="size_text_show"><span>Null</span></h3>
+                            </div>
+
+                              
+                            
+                             
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="details_display">
+                    <div class="details">
+                        <h3>Size of the Queue:-</h3>
+                        <div class="size_div">
+                            <h3 class="size_text_show"><span id="size_value"></span></h3>
+                        </div>
+                    </div>
+                     <div class="details">
+                        <h3>Peek value(Front) :-</h3>
+                        <div class="size_div">
+                            <h3 class="size_text_show"><span id="peek_value"></span></h3>
+                        </div>
+                    </div>
+                     <div class="details">
+                        <h3>Queue is Empty:-</h3>
+                        <div class="size_div">
+                            <h3 class="size_text_show"><span id="isempty_value"></span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="functions">
+                    <div class="functions_top">
+                        <div class="function_top_textfield">
+                            <input class="text_field" type="text" placeholder="Enter the Value(max 7 char)" maxlength="7">
+                        </div>
+                        <div class="function_top_buttons">
+                            <button id="size_button"  class="function_button" onclick="size()">Size</button>
+                            <button id="reset_button" class="function_button"onclick="reset()">Reset</button>
+                        </div>
+                    </div>
+                    <div class="functions_bottom">
+                        <button id="enqueue_button" class="function_button" onclick="enqueue()">Enqueue</button>
+                        <button id="dequeue_button" class="function_button" onclick="dequeue()">Dequeue </button>
+                        <button id="peek" class="function_button" onclick="peek()">Peek</button>
+                        <button id="empty" class="function_button" onclick="isEmpty()">isEmpty</button>
+                    </div>
+                </div>
+            </div>
+            <div class="seperation_container"></div>
+            <div class="content_container">
+                <div class="para">
+                    <p>A queue is a linear data structure that follows the FIFO (First In, First Out)
+                         principle. </p>
+                </div>
+                 <div class="para">
+                    <p> Elements are added at the rear and removed from the front.</p>
+                </div>
+                <div class="types">
+                    <div class="book_logo">
+                        <img id="book_logo" src="books.png" alt="book_logo">
+                    </div>
+                    <div class="types_text">
+                        <h3>Types of Queues:-</h3>
+                    </div>
+                </div>
+                <div class="types_list">
+                    
+                     <ol class="types_ol">
+                        <li>
+                            <span class="title">Simple Queue:</span>
+                            <span class="description">Follows FIFO. Insert at rear, delete from front.</span>
+                        </li>
+                        <li>
+                            <span class="title">Circular Queue:</span>
+                            <span class="description">Connects rear to front to reuse space efficiently.</span>
+                        </li>
+                        <li>
+                            <span class="title">Priority Queue:</span>
+                            <span class="description">Elements are dequeued based on priority, not order.</span>
+                        </li>
+                        <li>
+                            <span class="title">Deque (Double-Ended Queue):</span>
+                            <span class="description">Insertion and deletion are allowed at both ends.</span>
+                        </li>
+                    </ol>
+                </div>
+                  <div class="operation_types">
+                    <div class="operation_logo">
+                        <img id="operation_logo" src="operation.png" alt="operations_logo">
+                    </div>
+                    <div class="operation_text">
+                        <h4>Core Operations:-</h4>
+                    </div>
+                </div>
+                <div class="operation_list">
+                    
+                     <ol class="operation_ol">
+                        <li>
+                            <span class="title">enqueue(x):</span>
+                            <span class="description">Add x to rear</span>
+                        </li>
+                        <li>
+                            <span class="title">dequeue():</span>
+                            <span class="description">Remove front element</span>
+                        </li>
+                        <li>
+                            <span class="title">peek():</span>
+                            <span class="description">View front element</span>
+                        </li>
+                        <li>
+                            <span class="title">is Empty():</span>
+                            <span class="description">Check if queue is empty</span>
+                        </li>
+                    </ol>
+                </div>
+                 <div class="complexity">
+                    <div class="operation_logo">
+                        <img id="clock_logo" src="clock.png" alt="clock_logo">
+                    </div>
+                    <div class="complexity_text">
+                        <h3>Time Complexity:- <span id="complexity_value">O(1)</span></h3>
+                    </div>
+                </div>
+                <div class="complexity">
+                    <div class="operation_logo">
+                        <img id="clock_logo" src="clock.png" alt="clock_logo">
+                    </div>
+                    <div class="complexity_text">
+                        <h3>Space Complexity:- <span id="complexity_value">O(n)</span></h3>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+<script src="queue.js"></script>
+</html>

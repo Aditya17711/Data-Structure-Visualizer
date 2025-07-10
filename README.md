@@ -21,6 +21,10 @@ Built using **HTML**, **CSS**, and **JavaScript** to demonstrate front-end skill
 ![image](https://github.com/user-attachments/assets/5183213e-9879-4aa6-b0f7-e7899a0bbf5f)
 
 ---
+## 🔗 Live Demo
+
+[Click here to try it live!]
+(https://aditya17711.github.io/Data-Structure-Visualizer/)
 
 ## Getting Started
 
